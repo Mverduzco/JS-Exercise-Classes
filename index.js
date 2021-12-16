@@ -45,10 +45,17 @@ class Person {
   constructor(name, age){
     this.name = name;
     this.age = age;
-    this.emptystomach = [];
-    
+    this.stomach = [];
+  }
+  eat(){
+    returns `${this.name} ate some Food`;
+  }
+  poop(){
+    this.stomach.length = [];
   }
 }
+
+
 
 /*
   TASK 2
@@ -65,8 +72,21 @@ class Person {
 */
 
 class Car {
-  
-}
+  constructor (model, milePerGallon){
+    this.model = model;
+    this.milePerGallon = milePerGallon;
+    this.tank = 0;
+    this.odometer = 0;
+  }
+  fill(gallons){
+    this.tank = this.tank + gallons;
+  }
+  dive(distance){
+    const distanceDrivable = this.milePerGallon * this.tank;
+    if(distance <= distanceDrivable){
+    }
+  }
+}  
 
 /*
   TASK 3
