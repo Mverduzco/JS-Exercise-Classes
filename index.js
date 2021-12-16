@@ -45,9 +45,8 @@ class Person {
   constructor(name, age){
     this.name = name;
     this.age = age;
-    this.emptystomach = true;
+    this.emptystomach = [];
     
-    const stomach = [];
   }
 }
 
